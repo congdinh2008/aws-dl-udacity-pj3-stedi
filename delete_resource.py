@@ -57,7 +57,7 @@ def main():
     AWS_SECRET_ACCESS_KEY = config.get('AWS', 'AWS_SECRET_ACCESS_KEY')
     S3_BUCKET_NAME = config.get('S3', 'S3_BUCKET_NAME')
 
-    ec2, s3, iam, glue = create_clients(
+    s3 = create_clients(
         AWS_REGION, AWS_ACCESS_KEY, AWS_SECRET_ACCESS_KEY)
 
     delete_s3_bucket(s3, S3_BUCKET_NAME)
