@@ -5,7 +5,7 @@ from time import sleep
 
 
 def create_clients(AWS_REGION, AWS_ACCESS_KEY, AWS_SECRET_ACCESS_KEY):
-    print("Creating clients for IAM, EC2, S3 and Glue")
+    print("Creating clients for S3")
     s3 = boto3.resource('s3',
                         region_name=AWS_REGION,
                         aws_access_key_id=AWS_ACCESS_KEY,
