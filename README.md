@@ -1,6 +1,7 @@
 # Project: STEDI Human Balance Analytics
 
 ## Project Overview
+
 ### Spark and Human Balance
 
 As you have learned in this course Spark and AWS Glue allow you to process data from multiple sources, categorize the data, and curate it to be queried in the future for multiple purposes. In this project you will directly use the skills you have used, including some of the code you have already written.
@@ -82,9 +83,15 @@ To simulate the data coming from the various sources, you will need to create yo
 - You have decided you want to get a feel for the data you are dealing with in a semi-structured format, so you decide to create two Glue tables for the two landing zones. Share your customer_landing.sql and your accelerometer_landing.sql script in git.
 - Query those tables using Athena, and take a screenshot of each one showing the resulting data. Name the screenshots customer_landing(.png,.jpeg, etc.) and accelerometer_landing(.png,.jpeg, etc.).
 
-Using SQL Scripts:
+Using SQL Scripts: <a href="https://github.com/congdinh2008/aws-dl-udacity-pj3-stedi/tree/main/sql_script">SQL Scripts</a>
 
-Or using Glue with Boto3 in Notebook: 
+Or using Glue with Boto3 in Notebook: <a href="https://github.com/congdinh2008/aws-dl-udacity-pj3-stedi/blob/main/dl_stedi.ipynb">NoteBook</a>
+
+Customer Landing
+<img src="./images/customer_landing.png">
+
+Accelerometer Landing
+<img src="./images/accelerometer_landing.png">
 
 The Data Science team has done some preliminary data analysis and determined that the Accelerometer Records each match one of the Customer Records. They would like you to create 2 AWS Glue Jobs that do the following:
 
@@ -93,6 +100,11 @@ The Data Science team has done some preliminary data analysis and determined tha
 2. Sanitize the Accelerometer data from the Mobile App (Landing Zone) - and only store Accelerometer Readings from customers who agreed to share their data for research purposes (Trusted Zone) - creating a Glue Table called accelerometer_trusted.
 
 3. You need to verify your Glue job is successful and only contains Customer Records from people who agreed to share their data. Query your Glue customer_trusted table with Athena and take a screenshot of the data. Name the screenshot customer_trusted(.png,.jpeg, etc.).
+
+Using Python Scripts: <a href="https://github.com/congdinh2008/aws-dl-udacity-pj3-stedi/tree/main/py_scripts">Python Scripts</a>
+
+Customer Trusted
+<img src="./images/customer_trusted.png">
 
 Data Scientists have discovered a data quality issue with the Customer Data. The serial number should be a unique identifier for the STEDI Step Trainer they purchased. However, there was a defect in the fulfillment website, and it used the same 30 serial numbers over and over again for millions of customers! Most customers have not received their Step Trainers yet, but those who have, are submitting Step Trainer data over the IoT network (Landing Zone). The data from the Step Trainer Records has the correct serial numbers.
 
@@ -131,7 +143,10 @@ $ pip3 install pandas
 $ pip3 install awscli
 ```
 
-Open dw_notebook.ipynb
+Open dl_stedi.ipynb: <a href="https://github.com/congdinh2008/aws-dl-udacity-pj3-stedi/blob/main/dl_stedi.ipynb">NoteBook</a>
 
 Run code follow by markdown
 
+Using Python Scripts: <a href="https://github.com/congdinh2008/aws-dl-udacity-pj3-stedi/tree/main/py_scripts">Python Scripts</a>
+
+Using SQL Scripts: <a href="https://github.com/congdinh2008/aws-dl-udacity-pj3-stedi/tree/main/sql_script">SQL Scripts</a>

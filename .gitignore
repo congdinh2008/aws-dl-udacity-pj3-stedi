@@ -1,3 +1,8 @@
 .DS_Store
 aws.cfg
 py_scripts/run-1680339593694-part-r-00026
+py_scripts/Accelerometer_Landing_to_Trusted_Drop_Duplicated.py
+.gitignore
+.gitignore
+py_scripts/Step_Trainer_Landing_to_Trusted_Drop_Duplicated.py
+py_scripts/Customer_Curated_Drop_Duplicated.py
