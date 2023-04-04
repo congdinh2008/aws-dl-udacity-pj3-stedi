@@ -114,11 +114,17 @@ The Data Science team would like you to write a Glue job that does the following
 
 1. Sanitize the Customer data (Trusted Zone) and create a Glue Table (Curated Zone) that only includes customers who have accelerometer data and have agreed to share their data for research called customers_curated.
 
+Using Python Scripts: <a href="https://github.com/congdinh2008/aws-dl-udacity-pj3-stedi/tree/main/py_scripts">Python Scripts</a>
+
 Finally, you need to create two Glue Studio jobs that do the following tasks:
 
 1. Read the Step Trainer IoT data stream (S3) and populate a Trusted Zone Glue Table called step_trainer_trusted that contains the Step Trainer Records data for customers who have accelerometer data and have agreed to share their data for research (customers_curated).
 
+Using Python Scripts: <a href="https://github.com/congdinh2008/aws-dl-udacity-pj3-stedi/tree/main/py_scripts">Python Scripts</a>
+
 2. Create an aggregated table that has each of the Step Trainer Readings, and the associated accelerometer reading data for the same timestamp, but only for customers who have agreed to share their data, and make a glue table called machine_learning_curated.
+
+Using Python Scripts: <a href="https://github.com/congdinh2008/aws-dl-udacity-pj3-stedi/tree/main/py_scripts">Python Scripts</a>
 
 ## How to run
 
